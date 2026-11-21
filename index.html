@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sage Geophysical LLC</title>
+
+<style>
+:root {
+    --primary: #1e3a5f;
+    --secondary: #3d6d8f;
+    --accent: #6a9c89;
+    --light: #f5f7fa;
+    --dark: #1c2431;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background: var(--light);
+}
+
+header {
+    background: linear-gradient(rgba(30,58,95,.85), rgba(30,58,95,.85)),
+                url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+nav {
+    background: var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 16px 22px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: var(--secondary);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.about p,
+.contact p {
+    margin-bottom: 15px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.service-card h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.highlight h2 {
+    margin-bottom: 20px;
+}
+
+.highlight p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.contact-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width:600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sage Geophysical LLC</h1>
+    <p>
+        Practical Geoscience Solutions for Energy, Environmental,
+        and Resource Development Projects.
+    </p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about" class="container about">
+    <h2>About Us</h2>
+    <p>
+        Sage Geophysical LLC provides independent geophysical consulting
+        services focused on subsurface characterization, seismic interpretation,
+        integrated geoscience analysis, and technical project support.
+    </p>
+
+    <p>
+        We help clients make informed decisions by transforming complex
+        geophysical and geological data into actionable insights.
+    </p>
+</section>
+
+<section id="services" class="container">
+    <h2>Services</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>Seismic Interpretation</h3>
+            <p>
+                Structural and stratigraphic interpretation,
+                fault analysis, horizon mapping,
+                and prospect evaluation.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Reservoir Characterization</h3>
+            <p>
+                Integrated geophysical and geological analysis
+                to improve understanding of subsurface reservoirs.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Well Log Integration</h3>
+            <p>
+                Correlation of well data and seismic datasets
+                for improved subsurface models.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Technical Due Diligence</h3>
+            <p>
+                Independent evaluation of exploration,
+                development, and acquisition opportunities.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Project Support</h3>
+            <p>
+                Technical reviews, data quality assessments,
+                and consulting for geoscience projects.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Custom Consulting</h3>
+            <p>
+                Tailored geophysical solutions designed
+                to meet your project's unique requirements.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="expertise" class="highlight">
+    <h2>Why Sage Geophysical?</h2>
+
+    <p>
+        We combine scientific rigor, industry experience,
+        and practical project execution to deliver reliable,
+        cost-effective geophysical consulting services.
+    </p>
+</section>
+
+<section id="contact" class="container contact">
+    <h2>Contact</h2>
+
+    <div class="contact-box">
+        <p><strong>Sage Geophysical LLC</strong></p>
+
+        <p>Email: info@sagegeophysical.com</p>
+
+        <p>
+            Contact us to discuss consulting opportunities,
+            technical evaluations, and project support needs.
+        </p>
+
+        <a class="button"
+           href="mailto:info@sagegeophysical.com">
+           Contact Us
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2026 Sage Geophysical LLC. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
